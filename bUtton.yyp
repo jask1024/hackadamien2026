@@ -21,9 +21,9 @@
   "resources":[
     {"id":{"name":"fnt_counter","path":"fonts/fnt_counter/fnt_counter.yy",},},
     {"id":{"name":"Big_Trophy","path":"objects/Big_Trophy/Big_Trophy.yy",},},
+    {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},},
     {"id":{"name":"Trophy_Win","path":"objects/Trophy_Win/Trophy_Win.yy",},},
-    {"id":{"name":"Win_Key","path":"objects/Win_Key/Win_Key.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room10","path":"rooms/Room10/Room10.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
