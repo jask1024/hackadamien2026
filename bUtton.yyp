@@ -34,7 +34,6 @@
     {"id":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"id":{"name":"Room8","path":"rooms/Room8/Room8.yy",},},
     {"id":{"name":"Room9","path":"rooms/Room9/Room9.yy",},},
-    {"id":{"name":"spritemanager","path":"scripts/spritemanager/spritemanager.yy",},},
     {"id":{"name":"Big_Trophy_sprite","path":"sprites/Big_Trophy_sprite/Big_Trophy_sprite.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Trophy_Win_Sprite","path":"sprites/Trophy_Win_Sprite/Trophy_Win_Sprite.yy",},},
