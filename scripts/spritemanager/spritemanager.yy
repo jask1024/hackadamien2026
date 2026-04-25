@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spritemanager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spritemanager",
+  "parent":{
+    "name":"bUtton",
+    "path":"bUtton.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
