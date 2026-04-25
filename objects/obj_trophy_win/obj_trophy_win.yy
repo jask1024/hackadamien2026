@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Big_Trophy",
+  "%Name":"obj_trophy_win",
   "eventList":[],
   "managed":true,
-  "name":"Big_Trophy",
+  "name":"obj_trophy_win",
   "overriddenProperties":[],
   "parent":{
-    "name":"bUtton",
-    "path":"bUtton.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
