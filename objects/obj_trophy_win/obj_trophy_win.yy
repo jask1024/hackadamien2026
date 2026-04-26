@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Big_Trophy_sprite",
-    "path":"sprites/Big_Trophy_sprite/Big_Trophy_sprite.yy",
+    "name":"spr_trophy",
+    "path":"sprites/spr_trophy/spr_trophy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

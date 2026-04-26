@@ -110,6 +110,19 @@ if (room == asset_get_index("rm_level_10"))
         global.trophies += 1;
         room_goto(asset_get_index("rm_trophy"));
     }
+	// Draw sidebar background
+draw_set_color(make_color_rgb(30, 30, 30));
+draw_rectangle(0, 0, 250, room_height, false);
+
+// Sidebar title
+draw_set_color(c_white);
+draw_set_font(-1);
+draw_text_transformed(20, 20, "LEVEL " + string(global.trophies + 1), 2, 2, 0);
+draw_text_transformed(20, 60, "TASK:", 1.5, 1.5, 0);
+
+// Divider line
+draw_set_color(c_gray);
+draw_line(0, 90, 250, 90);
 // Instructions for each level
 draw_set_color(c_white);
 draw_set_font(-1);

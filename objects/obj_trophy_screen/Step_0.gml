@@ -1,7 +1,7 @@
 trophy_timer -= 1;
 if (trophy_timer <= 0) {
     if (global.trophies == 1) room_goto(asset_get_index("rm_level_2"));
- else if (global.trophies == 2) room_goto(asset_get_index("rm_level_3"));
+    else if (global.trophies == 2) room_goto(asset_get_index("rm_level_3"));
     else if (global.trophies == 3) room_goto(asset_get_index("rm_level_4"));
     else if (global.trophies == 4) room_goto(asset_get_index("rm_level_5"));
     else if (global.trophies == 5) room_goto(asset_get_index("rm_level_6"));
