@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_minitrophy_icon_on",
+    "path":"sprites/spr_minitrophy_icon_on/spr_minitrophy_icon_on.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
