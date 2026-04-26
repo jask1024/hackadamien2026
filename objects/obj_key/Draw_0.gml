@@ -1,75 +1,80 @@
-draw_set_color(make_color_rgb(30, 30, 30));
-draw_rectangle(0, 0, 250, room_height, false);
+var tp = global.total_presses;
+var trophies = global.trophies;
+var timer = global.level_timer;
 
-draw_set_color(c_white);
-draw_set_font(-1);
-draw_text_transformed(20, 20, "LEVEL " + string(global.trophies + 1), 2, 2, 0);
-draw_text_transformed(20, 60, "TASK:", 1.5, 1.5, 0);
+// Timer
+var seconds_left = ceil(timer / room_speed);
+draw_set_font(fnt_small);
+if (seconds_left <= 5) draw_set_color(c_red);
+else draw_set_color(c_dkgray);
+draw_text(20, 20, "TIME: " + string(seconds_left));
 
-draw_set_color(c_gray);
-draw_line(0, 90, 250, 90);
+// Level
+draw_set_color(c_dkgray);
+draw_set_font(fnt_small);
+draw_text(20, 60, "LEVEL " + string(trophies + 1));
 
-draw_set_color(c_white);
-if (room == asset_get_index("rm_level_1")) {
-    draw_text_transformed(20, 110, "Press W once!", 1.5, 1.5, 0);
+// Instructions
+draw_set_font(fnt_small);
+draw_set_color(c_dkgray);
+if (room == rm_level_1) {
+    draw_text(20, 140, "Press W once!");
 }
-if (room == asset_get_index("rm_level_2")) {
-    draw_text_transformed(20, 110, "Press W 20 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/20", 1.5, 1.5, 0);
+if (room == rm_level_2) {
+    draw_text(20, 140, "Press W 20 times!");
+    draw_text(20, 180, string(tp) + " / 20");
 }
-if (room == asset_get_index("rm_level_3")) {
-    draw_text_transformed(20, 110, "Hold W for 2 seconds!", 1.5, 1.5, 0);
+if (room == rm_level_3) {
+    draw_text(20, 140, "Hold W 2 seconds!");
 }
-if (room == asset_get_index("rm_level_4")) {
-    draw_text_transformed(20, 110, "Press W 5 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/5", 1.5, 1.5, 0);
+if (room == rm_level_4) {
+    draw_text(20, 140, "Press W 50 times!");
+    draw_text(20, 180, string(tp) + " / 50");
 }
-if (room == asset_get_index("rm_level_5")) {
-    draw_text_transformed(20, 110, "Press W 10 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/10", 1.5, 1.5, 0);
+if (room == rm_level_5) {
+    draw_text(20, 140, "Hold W 5 seconds!");
 }
-if (room == asset_get_index("rm_level_6")) {
-    draw_text_transformed(20, 110, "Press W 30 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/30", 1.5, 1.5, 0);
+if (room == rm_level_6) {
+    draw_text(20, 140, "Exactly 7 presses!");
+    draw_text(20, 180, "Presses: " + string(tp));
 }
-if (room == asset_get_index("rm_level_7")) {
-    draw_text_transformed(20, 110, "Double tap W!", 1.5, 1.5, 0);
+if (room == rm_level_7) {
+    draw_text(20, 140, "30 presses in 10 secs!");
+    draw_text(20, 180, string(tp) + " / 30");
 }
-if (room == asset_get_index("rm_level_8")) {
-    draw_text_transformed(20, 110, "Press W 50 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/50", 1.5, 1.5, 0);
+if (room == rm_level_8) {
+    draw_text(20, 140, "Double tap 5 times!");
+    draw_text(20, 180, "Taps: " + string(double_tap_count) + " / 5");
 }
-if (room == asset_get_index("rm_level_9")) {
-    draw_text_transformed(20, 110, "Press W exactly 3 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, "Presses: " + string(global.total_presses), 1.5, 1.5, 0);
+if (room == rm_level_9) {
+    draw_text(20, 140, "Press W 75 times!");
+    draw_text(20, 180, string(tp) + " / 75");
 }
-if (room == asset_get_index("rm_level_10")) {
-    draw_text_transformed(20, 110, "Press W 100 times!", 1.5, 1.5, 0);
-    draw_text_transformed(20, 150, string(global.total_presses) + "/100", 1.5, 1.5, 0);
+if (room == rm_level_10) {
+    if (combo_stage == 0) draw_text(20, 140, "Hold W 3 seconds!");
+    if (combo_stage == 1) draw_text(20, 140, "Now tap 10 times!");
+    if (combo_stage == 2) draw_text(20, 140, "Hold 3 more secs!");
 }
 
+// W key perfectly centered
+var cx = room_width / 2;
+var cy = room_height / 2;
 if (is_pressed) {
-    draw_set_color(c_gray);
-    draw_rectangle(x, y + 8, x + 100, y + 108, false);
-    draw_set_color(c_white);
-    draw_set_font(-1);
-    draw_text(x + 35, y + 38, "W");
+    draw_sprite_ext(Win_key_sprite_pressed, 0, cx, cy, 5, 5, 0, c_white, 1);
 } else {
-    draw_set_color(c_white);
-    draw_rectangle(x, y, x + 100, y + 100, false);
-    draw_set_color(c_black);
-    draw_set_font(-1);
-    draw_text(x + 35, y + 24, "W");
+    draw_sprite_ext(Win_key_sprite, 0, cx, cy, 5, 5, 0, c_white, 1);
 }
 
-draw_set_color(c_white);
-draw_set_font(-1);
-draw_text(10, 700, "Trophies:");
+// Trophies bottom left
+draw_set_color(c_dkgray);
+draw_set_font(fnt_small);
+draw_text(20, 660, "Trophies:");
+var on = spr_minitrophy_icon_on;
+var off = spr_minitrophy_icon_off;
 for (var i = 0; i < 10; i++) {
-    if (i < global.trophies) {
-        draw_set_color(c_yellow);
+    if (i < trophies) {
+        draw_sprite(on, 0, 20 + (i * 50), 740);
     } else {
-        draw_set_color(make_color_rgb(50, 50, 50));
+        draw_sprite(off, 0, 20 + (i * 50), 740);
     }
-    draw_rectangle(10 + (i * 30), 730, 35 + (i * 30), 755, false);
 }
