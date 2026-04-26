@@ -27,10 +27,14 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
+<<<<<<< HEAD
   "spriteId":{
     "name":"spr_trophy",
     "path":"sprites/spr_trophy/spr_trophy.yy",
   },
+=======
+  "spriteId":null,
+>>>>>>> parent of 9f3e3cf (Adds all 10 rooms)
   "spriteMaskId":null,
   "visible":true,
 }

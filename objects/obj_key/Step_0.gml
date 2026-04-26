@@ -1,16 +1,15 @@
-// Count presses
 if (keyboard_check_pressed(ord("W"))) {
     press_timer = 10;
     global.total_presses += 1;
 }
 
-// Animate key
 if (press_timer > 0) {
     press_timer -= 1;
     is_pressed = true;
 } else {
     is_pressed = false;
 }
+<<<<<<< HEAD
 
 // Level 1 win condition
 if (room == asset_get_index("rm_level_1")) {
@@ -163,4 +162,8 @@ if (room == asset_get_index("rm_level_9")) {
 if (room == asset_get_index("rm_level_10")) {
     draw_text_transformed(50, 300, "Press W 100 times!", 2, 2, 0);
     draw_text_transformed(50, 350, "Presses: " + string(global.total_presses) + "/100", 2, 2, 0);
+=======
+if (global.total_presses >= 1) {
+    room_goto(rm_trophy);
+>>>>>>> parent of 9f3e3cf (Adds all 10 rooms)
 }
