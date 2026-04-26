@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Big_Trophy_sprite",
+    "path":"sprites/Big_Trophy_sprite/Big_Trophy_sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
