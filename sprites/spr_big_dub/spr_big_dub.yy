@@ -1,18 +1,11 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_trophy",
+  "%Name":"spr_big_dub",
   "bboxMode":0,
-<<<<<<< HEAD
-  "bbox_bottom":246,
-  "bbox_left":0,
-  "bbox_right":255,
-  "bbox_top":9,
-=======
-  "bbox_bottom":127,
-  "bbox_left":11,
-  "bbox_right":119,
-  "bbox_top":11,
->>>>>>> 2563cf0ef3f375cd93d6ef717c98b402712afb1c
+  "bbox_bottom":185,
+  "bbox_left":29,
+  "bbox_right":205,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,26 +14,14 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"5525dec6-0b66-4dcd-bbf5-255203f72322","name":"5525dec6-0b66-4dcd-bbf5-255203f72322","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-<<<<<<< HEAD
   "gridX":64,
   "gridY":64,
   "height":256,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"70d41a5c-0c31-4033-a3c7-73aa18d92afe","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"70d41a5c-0c31-4033-a3c7-73aa18d92afe","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"eb91c5b7-8c1e-4242-a608-9e4554e45b41","blendMode":0,"displayName":"default","isLocked":false,"name":"eb91c5b7-8c1e-4242-a608-9e4554e45b41","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"f7ea6647-aa12-4773-b632-3d2d8b3cf08d","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"f7ea6647-aa12-4773-b632-3d2d8b3cf08d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-=======
-  "gridX":0,
-  "gridY":0,
-  "height":128,
-  "HTile":false,
-  "layers":[
-    {"$GMImageLayer":"","%Name":"971f252a-1cab-4e27-b9ff-3250c0086976","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"971f252a-1cab-4e27-b9ff-3250c0086976","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"010719a7-a5e7-43a5-9bea-178afcf65d6b","blendMode":0,"displayName":"default","isLocked":false,"name":"010719a7-a5e7-43a5-9bea-178afcf65d6b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
->>>>>>> 2563cf0ef3f375cd93d6ef717c98b402712afb1c
   ],
-  "name":"spr_trophy",
+  "name":"spr_big_dub",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -52,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_trophy",
+    "%Name":"spr_big_dub",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_trophy",
+    "name":"spr_big_dub",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -88,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5525dec6-0b66-4dcd-bbf5-255203f72322","path":"sprites/spr_trophy/spr_trophy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5525dec6-0b66-4dcd-bbf5-255203f72322","path":"sprites/spr_big_dub/spr_big_dub.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1bea0392-586b-4f4e-833e-1d7cc415dc4b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -105,9 +86,5 @@
   },
   "type":0,
   "VTile":false,
-<<<<<<< HEAD
   "width":256,
-=======
-  "width":128,
->>>>>>> 2563cf0ef3f375cd93d6ef717c98b402712afb1c
 }
